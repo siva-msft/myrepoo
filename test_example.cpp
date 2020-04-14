@@ -10,5 +10,5 @@ struct T1 {
 
 int main() {
     T1 t1, *pt1 = &t1;
-    memset(&t1, 0, sizeof(&t1)); // recommend: sizeof(struct T1)
+    memset(&t1, 0, sizeof(*t1)); // recommend: sizeof(struct T1)
 }
