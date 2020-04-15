@@ -1,6 +1,6 @@
 /* For reference, the test repo on GitHub: https://github.com/siva-msft/p-test */
 
-#include <bits/stdc++.h> 
+#include <limits.h>
 
 void aof_1() {
     int num;
