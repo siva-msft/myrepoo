@@ -14,6 +14,7 @@ template<typename T> void use(T) {}
 
 void cuv_1() {
     long var1;
+    var1 = 0;
     T1 var2;
     long var3 = 0L;
     long var4;
