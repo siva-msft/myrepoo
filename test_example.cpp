@@ -18,12 +18,12 @@ struct T1 {
 void ptr_1() {
     T1 t1, *pt1 = &t1;
     memset(&t1, 0, sizeof(t1)); // correct usage
-    memset(&t1, 0, sizeof(&t1)); // recommend: sizeof(struct T1) or sizeof(t1)
+    memset(&t1, 0, sizeof(*t1)); // recommend: sizeof(struct T1) or sizeof(t1)
 }
 
 void ptr_2() {
     T1 t1, *pt2 = &t1;
-    memcmp(&t1,pt2,sizeof(T1*)); // recommend: sizeof(struct T1)
+    memcmp(&t1,pt2,sizeof(*t1)); // recommend: sizeof(struct T1)
 }
 
 int main() {
